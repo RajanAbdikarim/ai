@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Greeting App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel" id="form-panel">
+        <p class="eyebrow">AI Dev Team demo</p>
+        <h1>Privetstvie</h1>
+        <p class="copy">Vvedi svoe imya, i prilozhenie pokazhet personalnoe privetstvie.</p>
+        <form id="greeting-form">
+          <label for="name-input">Tvoe imya</label>
+          <div class="input-row">
+            <input id="name-input" name="name" type="text" autocomplete="name" placeholder="Rajan" required />
+            <button type="submit">Pokazat</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel result hidden" id="result-panel" aria-live="polite">
+        <p class="eyebrow">Gotovo</p>
+        <h2 id="greeting-title">Privet!</h2>
+        <p class="copy">Horoshego dnya i produktivnoi raboty.</p>
+        <button type="button" id="reset-button">Vvesti drugoe imya</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
