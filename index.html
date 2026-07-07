@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Greeting App</title>
+    <title>Приветствие</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="panel" id="form-panel">
-        <p class="eyebrow">AI Dev Team demo</p>
-        <h1>Privetstvie</h1>
-        <p class="copy">Vvedi svoe imya, i prilozhenie pokazhet personalnoe privetstvie.</p>
+    <main class="page">
+      <section class="card" id="form-card">
+        <p class="label">Задача #6</p>
+        <h1>Введите имя</h1>
+        <p class="description">5 задачу сделай до конца, добавь туда бакэнд</p>
         <form id="greeting-form">
-          <label for="name-input">Tvoe imya</label>
-          <div class="input-row">
-            <input id="name-input" name="name" type="text" autocomplete="name" placeholder="Rajan" required />
-            <button type="submit">Pokazat</button>
+          <label for="name-input">Ваше имя</label>
+          <div class="row">
+            <input id="name-input" name="name" type="text" placeholder="Например, Раджан" autocomplete="name" required />
+            <button type="submit">Показать</button>
           </div>
         </form>
       </section>
 
-      <section class="panel result hidden" id="result-panel" aria-live="polite">
-        <p class="eyebrow">Gotovo</p>
-        <h2 id="greeting-title">Privet!</h2>
-        <p class="copy">Horoshego dnya i produktivnoi raboty.</p>
-        <button type="button" id="reset-button">Vvesti drugoe imya</button>
+      <section class="card result hidden" id="result-card" aria-live="polite">
+        <p class="label">Готово</p>
+        <h2 id="greeting-title">Здравствуйте!</h2>
+        <p class="description">Приятно видеть вас в этом маленьком браузерном приложении.</p>
+        <button type="button" id="reset-button">Ввести другое имя</button>
       </section>
     </main>
     <script src="app.js"></script>

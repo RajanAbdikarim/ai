@@ -1,7 +1,7 @@
 const form = document.querySelector("#greeting-form");
 const input = document.querySelector("#name-input");
-const formPanel = document.querySelector("#form-panel");
-const resultPanel = document.querySelector("#result-panel");
+const formCard = document.querySelector("#form-card");
+const resultCard = document.querySelector("#result-card");
 const greetingTitle = document.querySelector("#greeting-title");
 const resetButton = document.querySelector("#reset-button");
 
@@ -14,14 +14,14 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  greetingTitle.textContent = `Privet, ${name}!`;
-  formPanel.classList.add("hidden");
-  resultPanel.classList.remove("hidden");
+  greetingTitle.textContent = `Здравствуйте, ${name}!`;
+  formCard.classList.add("hidden");
+  resultCard.classList.remove("hidden");
 });
 
 resetButton.addEventListener("click", () => {
   input.value = "";
-  resultPanel.classList.add("hidden");
-  formPanel.classList.remove("hidden");
+  resultCard.classList.add("hidden");
+  formCard.classList.remove("hidden");
   input.focus();
 });
