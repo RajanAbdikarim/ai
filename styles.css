@@ -1,0 +1,131 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: #0f172a;
+  color: #172033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(20, 184, 166, 0.85), rgba(37, 99, 235, 0.82)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.shell {
+  width: min(92vw, 720px);
+  display: grid;
+  gap: 16px;
+}
+
+.panel {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(34px, 7vw, 64px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.copy {
+  max-width: 52ch;
+  margin: 18px 0 26px;
+  color: #42526b;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+input,
+button {
+  min-height: 48px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  padding: 0 14px;
+  color: #111827;
+  background: #ffffff;
+}
+
+input:focus {
+  outline: 3px solid rgba(20, 184, 166, 0.25);
+  border-color: #0d9488;
+}
+
+button {
+  border: 0;
+  padding: 0 20px;
+  color: #ffffff;
+  background: #0f766e;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+.result {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .panel {
+    padding: 24px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+}
